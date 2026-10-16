@@ -36,7 +36,7 @@ Total per event: about 0.13 mJ for inference plus about 0.85 mJ for advertising,
 
 The 7.54 mA peak matches the assumed ~7 mA radio current, and the near-0 flat section is consistent with a very low sleep baseline. However, the active phase averages about 4.3 mA (11.93 mC over 2.766 s), so a 5 s advertising window would cost roughly 20 mC (about 65 mJ), around 75 times my 0.28 mC estimate. The likely cause is a much shorter advertising interval than the 375 ms we predicted, so the advertising window dominates even more strongly than predicted, while inference remains negligible.
 
-![Task2pt2](images\ppk-screenshot-p2t2.jpeg)
+![Task2pt2](images/ppk-screenshot-p2t2.jpeg)
 
 ---
 
@@ -59,7 +59,7 @@ In T3, no network runs on the Puck, so only the wake-up and sensor readings rema
 
 The measured power consumption was much higher than estimated. The active section averaged 4.31 mA, which would consume about 65 mJ over 5 seconds at 3 V, compared with the estimated 1 mJ. This suggests that the estimate missed additional activity, such as repeated processing or sensor readings, although the measurement cannot identify each component's contribution. The near-zero intervals also do not confirm the expected sleep current if "DUT OFF" means the power supply was switched off. Separate measurements of T2 and T3 are needed to check whether T3 actually consumes 10–15% less energy.
 
-![Task2pt3](images\ppk-screenshot-p2t3.jpeg)
+![Task2pt3](images/ppk-screenshot-p2t3.jpeg)
 
 ## 3. Question P2.Q1: Explain the difference or lack of it in power consumption between Task 2 and Task 3.
 
