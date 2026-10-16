@@ -16,7 +16,7 @@ Variant 1 is likely more energy efficient because BLE communication can consume 
 
 The Puck sleeps with the accelerometer armed for wake-on-motion, drawing about 20 µA. When it is shaken, the accelerometer interrupt wakes the nRF52, which then reads one instantaneous sample (ax, ay, az). I assume the CPU draws about 3.5 mA while active, as given on the Espruino Puck.js power page.
 
-The network has 3 inputs, a hidden layer of 8 neurons and 3 outputs. That is 3×8 + 8×3 = 48 multiply-accumulate operations, plus 8 hidden activations and an argmax over the 3 outputs. Espruino interprets JavaScript, so I assume roughly 50-100 µs per operation including loop and array overhead. That gives an estimated inference time of about 5-10 ms, plus about 2-5 ms for wake-up and the accelerometer read, so about 10-15 ms of CPU activity in total.
+The network has 3 inputs, a hidden layer of 8 neurons and 3 outputs. That is 3×8 + 8×3 = 48 multiply-accumulate operations, plus 8 hidden activations and an argmax over the 3 outputs. Espruino interprets JavaScript, so we assume roughly 50-100 µs per operation including loop and array overhead. That gives an estimated inference time of about 5-10 ms, plus about 2-5 ms for wake-up and the accelerometer read, so about 10-15 ms of CPU activity in total.
 
 The energy for this phase is E = I × V × t = 3.5 mA × 3 V × 12 ms ≈ 0.13 mJ, or about 42 µC of charge.
 
