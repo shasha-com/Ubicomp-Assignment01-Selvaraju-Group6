@@ -30,7 +30,7 @@ The estimated average current during the awake phase was 0.85 mA. In comparison,
 ![P1T1-Measurements](images/ppk-screenshot-p1t1.jpeg)
 ## P1.Q1: How long would the CR2032 last? Explain your calculation.
 
-Using my measured average current of 1.32 mA, a CR2032 with a nominal capacity of 225 mAh would last 7 days of continuous operation.
+Using the measured average current of 1.32 mA, a CR2032 with a nominal capacity of 225 mAh would last 7 days of continuous operation.
 
 **Calculations:**
 
@@ -82,7 +82,7 @@ Average current draw = (I_awake × t_awake + I_sleep × t_sleep) / (t_awake + t_
 
 ## 2. Interpretation of the power consumption measurements
 
-Measured average current is ~0.63-0.68 mA, about 2.5x higher than the estimated 0.25 mA. The 5 s awake / 5 s sleep timing is confirmed, but the current in both phases is higher than estimated.
+The measurements come out about 2.7x higher than our estimate, the 24.34 s window averages ~0.68 mA versus your predicted 0.25 mA. The timing holds (awake bursts last ~5 s), but the awake current is ~1.06 mA instead of 0.50 mA, because the radio and sensor spikes (up to 6-7.5 mA) are much larger than the datasheet averages suggest. The sleep phase is also not a clean 3 µA: there’s a ~0.6 mA tail right after each burst before the current drops to near zero. A more realistic estimate would be ~1.0 mA awake and ~0.1 mA sleep, giving ~0.55-0.7 mA overall.
 
 **Measurements:**
 
