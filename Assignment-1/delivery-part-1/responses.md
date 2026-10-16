@@ -91,10 +91,13 @@ The measurements come out about 2.7x higher than our estimate, the 24.34 s windo
 - **Full cycle (~10 s):** 0.626 mA (selection), 0.684 mA (24.34 s window)
 
 **Awake:**
+![P1T2.1-Measurements](images/ppk-screenshot-p1t2_1.jpeg)
 
 **Asleep:**
+![P1T2.2-Measurements](images/ppk-screenshot-p1t2_2.jpeg)
 
 **Full 10Sec Cycle:**
+![P1T2.3-Measurements](images/ppk-screenshot-p1t2_3.jpeg)
 
 ## P1.Q2: We are now effectively active only half the time. But why is the energy consumption for a 10s cycle not half of what you saw in P1.T1?
 
@@ -151,10 +154,10 @@ The awake current (1.75 mA) is also higher than the estimated 0.50 mA, and the s
 Because sleep (1.36 mA) is close to awake (1.75 mA), the saving from sleeping is small, which is why the overall average (about 1.6 mA) is not much below always-on.
 
 **Awake (after a Shake):**
-ref: `Assignment-1\delivery-part-1\images\ppk-screenshot-p1t3.1.jpeg`
+![P1T3.1-Measurements](images/ppk-screenshot-p1t3.1.jpeg)
 
 **Sleep (waiting for a Shake):**
-ref: `Assignment-1\delivery-part-1\images\ppk-screenshot-p1t3.2.jpeg`
+![P1T3.2-Measurements](images/ppk-screenshot-p1t3.2.jpeg)
 
 ## P1.Q3: (a) Is there a difference between sleep-phase current and the current profile? If so, why? (b) How long (days/months/years) will the CR2032 battery last if the puck is moved 10 times a day?
 
