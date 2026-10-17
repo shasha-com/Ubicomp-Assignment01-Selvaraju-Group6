@@ -1,3 +1,4 @@
+//Task 1 (P1.T1): The battery killer
 Puck.accelOn();
 
 setInterval(function() {
@@ -7,9 +8,11 @@ setInterval(function() {
   var a_y = accel.acc.y / 82;
   var a_z = accel.acc.z / 82;
 
+    //12 Bytes thing
   var floats = new Float32Array([a_x, a_y, a_z]);
   var data = new Uint8Array(floats.buffer);
 
+    // Advertising BLE
   NRF.setAdvertising({}, {
     manufacturer: 0x0590,
     manufacturerData: data,

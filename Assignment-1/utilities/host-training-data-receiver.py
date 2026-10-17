@@ -3,9 +3,9 @@ from bleak import BleakScanner, BleakClient
 
 #================================== CONFIGURATION ========================================
 # Change this to 'lefttwist.csv' / 'righttwist.csv' when collecting your gesture dataset!
-OUTPUT_FILE = "straight.csv" 
+OUTPUT_FILE = "righttwist.csv" 
 
-PUCK_NAME = "Puck.js e011"  # The name of your Puck.js device as seen in the Web IDE
+PUCK_NAME = "Puck.js e826"  # The name of your Puck.js device as seen in the Web IDE
 
 
 #=============================================================================================================
